@@ -24,4 +24,5 @@ If you find any security vulnerability that has been inadvertently caused by me,
 
 Yours sincerely,  
 Daniel Connnelly
+
 connellyd2050@gmail.com
