@@ -1,4 +1,4 @@
-## Morning Exercise Routine: Privacy policy
+ ## Morning Exercise Routine: Privacy policy
 
 Welcome to the Morning Exercise Routine app for Android!
 
@@ -17,7 +17,7 @@ The list of permissions required by the app can be found in the `AndroidManifest
 
 | Permission | Why it is required |
 | :---: | --- |
-| <uses-permission android:name="android.permission.INTERNET"/> | This enables the user to watch the single YouTube video in the app.
+| <uses-permission android:name="android.permission.INTERNET"/> | This enables the user to watch the single YouTube video in the app. |
  <hr style="border:1px solid gray">
 
 If you find any security vulnerability that has been inadvertently caused by me, or have any question regarding how the app protectes your privacy, please send me an email or post a discussion on GitHub, and I will surely try to fix it/help you.
