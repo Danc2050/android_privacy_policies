@@ -1,17 +1,17 @@
  ## Blueprint University: Privacy policy
 
-Welcome to the Blueprint University app for Android!
+Welcome to the Blueprint University app for Android and iOS!
 
-This is an Android app developed by Daniel Connelly. The app is also available on Google Play.
+This is a smartphone app developed by Daniel Connelly. The app is available on Google Play Store and the Apple App Store.
 
-As an avid Android user myself, I take privacy very seriously.
+As an avid user of smartphones myself, I take privacy very seriously.
 I know how irritating it is when apps collect your data without your knowledge.
 
 I hereby state, to the best of my knowledge and belief, that I have not programmed this app to collect any personally identifiable information. All data (e.g., app preferences) created by you (the user) is stored on your device only, and can be simply erased by clearing the app's data or uninstalling it.
 
 ### Explanation of permissions requested in the app
 
-The list of permissions required by the app can be found in the `AndroidManifest.xml` file:
+For Android, the list of permissions required by the app can be found in the `AndroidManifest.xml` file:
 
 <br/>
 
@@ -19,6 +19,14 @@ The list of permissions required by the app can be found in the `AndroidManifest
 | :---: | --- |
 | `<uses-permission android:name="android.permission.INTERNET"/>` | This enables the user to watch the single YouTube video in the app. |
  <hr style="border:1px solid gray">
+
+For iOS, it is in the `Info.plist` file:
+
+| Permission | Why it is required |
+| :---: | --- |
+| `<key>NSAppTransportSecurity</key>` | The `NSAllowsArbitraryLoads` key under this permission allows the app to load content from the internet, including over HTTP, which is necessary for fetching resources like videos or other external content. |
+| `<key>ITSAppUsesNonExemptEncryption</key>` | The value `false` for this key indicates that the app does not use any encryption or uses only exempt encryption. |
+<hr style="border:1px solid gray">
 
 If you find any security vulnerability that has been inadvertently caused by me, or have any question regarding how the app protectes your privacy, please send me an email or post a discussion on GitHub, and I will surely try to fix it/help you.
 
