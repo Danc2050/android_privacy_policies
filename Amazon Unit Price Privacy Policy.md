@@ -1,8 +1,8 @@
  ## Amazon Unit Price: Privacy policy
 
-Welcome to the Amazon Unit Price for Chrome!
+Welcome to the Amazon Unit Price for Chrome, Edge, Firefox, and Safari
 
-This is an extension by Daniel Connelly. The extension is also available on Firefox.
+This is an extension by Daniel Connelly.
 
 As an avid Chrome user myself, I take privacy very seriously.
 I know how irritating it is when extensions collect your data without your knowledge.
