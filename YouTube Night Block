@@ -1,0 +1,64 @@
+# Privacy Policy — YouTube Night Block
+
+**Effective date:** 12 August 2026
+
+## Summary
+
+YouTube Night Block does not collect, transmit, or sell any data. It makes no
+network requests of its own, contains no analytics or tracking code, and
+communicates with no servers. Everything it stores stays in your browser, on
+your device.
+
+## What the extension stores
+
+The following is saved locally using `chrome.storage.local` and is never
+transmitted anywhere:
+
+- **Your schedule** — the start and end times of the blocking window
+- **Your matching settings** — the regular expression pattern and flags used to
+  decide which tabs get reloaded
+- **A record of the most recent run** — a timestamp, whether blocking is
+  currently active, and the *number* of tabs that were reloaded
+
+The last-run record contains no URLs, page titles, or browsing history — only a
+count. Removing the extension deletes all of this.
+
+## What the extension reads but does not store
+
+To decide which tabs to reload when the blocking window begins, the extension
+reads the URLs of your open tabs and tests them against your pattern. This
+happens in memory, at that moment only. Tab URLs are never written to storage,
+never logged, and never sent anywhere.
+
+## How blocking works
+
+Blocking is performed by Chrome's `declarativeNetRequest` API using a static
+rule list bundled inside the extension. Chrome applies these rules itself and
+does not report back which requests matched. The extension therefore receives no
+information about which sites you visit or which requests were blocked.
+
+## Permissions
+
+| Permission | Why it is needed |
+|---|---|
+| `declarativeNetRequest` | Blocks requests to YouTube domains while the scheduled window is active |
+| `tabs` | Reads open tab URLs to find the ones matching your pattern, so they can be reloaded |
+| `storage` | Saves your schedule and matching settings on your device |
+| `alarms` | Triggers the start and end of the blocking window |
+
+The extension requests no host permissions and cannot read the contents of any
+web page.
+
+## Third parties
+
+None. The extension contains no analytics, no advertising, no remote code
+execution, and no third-party services. No data is shared, sold, or transferred
+to anyone, for any purpose.
+
+## Changes to this policy
+
+Any changes will be published at this URL with an updated effective date.
+
+## Contact
+
+Questions about this policy: <YOUR-CONTACT-EMAIL>
